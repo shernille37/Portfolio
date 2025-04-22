@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import Theme from "@/components/Theme/Theme";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
   title: "Portfolio",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         </header>
         {children}
         <Theme />
+        <Footer />
       </body>
     </html>
   );

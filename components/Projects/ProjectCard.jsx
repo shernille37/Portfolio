@@ -12,15 +12,10 @@ const ProjectCard = ({ data }) => {
   const {
     title,
     shortDescription,
-    visitors,
-    earned,
-    ratings,
-    githubStars,
-    numberOfSales,
+    technologies,
     livePreview,
     githubLink,
-    siteAge,
-    type,
+
     cover,
   } = data;
 
@@ -28,36 +23,16 @@ const ProjectCard = ({ data }) => {
     <div className="bg-secondary border-border flex flex-col justify-between rounded-[14px] border p-5">
       <div className="flex items-start justify-between gap-2">
         <div className="flex-1">
-          <div className="flex flex-col flex-wrap gap-3 sm:flex-row sm:items-center">
+          <div className="flex flex-col items-start flex-wrap gap-3 ">
             <h3 className="text-secondary-content text-lg font-medium md:font-semibold">
               {title}
             </h3>
-            {type && (
-              <span
-                className={`h-7 w-fit rounded-md bg-[#FFFFFF1A] p-1 text-sm ${
-                  type === "New 🔥" ? "animate-blink text-tag" : "text-accent"
-                } backdrop-blur-[80px]`}
-              >
-                {type}
-              </span>
-            )}
+            <div className="flex gap-3">
+              {technologies.map((tech, index) => (
+                <Image src={tech} width={20} height={20} />
+              ))}
+            </div>
           </div>
-          <ul className="mt-3 flex flex-col flex-wrap gap-2 sm:flex-row sm:gap-4">
-            {(visitors || numberOfSales) && (
-              <IconText
-                text={(visitors || numberOfSales)?.toString() || ""}
-                icon={Likes}
-              />
-            )}
-            {siteAge && <IconText text={siteAge} icon={Timer} />}
-            {earned && <IconText text={earned} icon={Earning} />}
-            {(ratings || githubStars) && (
-              <IconText
-                text={(ratings || githubStars)?.toString() || ""}
-                icon={Star}
-              />
-            )}
-          </ul>
         </div>
         <figure className="flex justify-end overflow-hidden">
           <Image
@@ -90,10 +65,10 @@ const ProjectCard = ({ data }) => {
           {githubLink && (
             <a
               href={githubLink}
-              className="text-accent flex gap-2 text-sm underline underline-offset-[3px] transition-all duration-75 ease-linear hover:scale-105 md:text-base"
+              className="text-accent flex items-center gap-2 text-sm underline underline-offset-[3px] transition-all duration-75 ease-linear hover:scale-105 md:text-base"
               target="_blank"
             >
-              <FaGithub className="w-[18px] md:w-5" />
+              <FaGithub className="text-base md:w-5" />
               <span>Github Link</span>
             </a>
           )}

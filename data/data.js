@@ -7,6 +7,12 @@ import TailwindCssIcon from "../assets/icons/tailwind-css.svg";
 import HTMLIcon from "../assets/icons/html.svg";
 import CSSIcon from "../assets/icons/css.svg";
 import SpringBootIcon from "../assets/icons/spring-boot.svg";
+import MongoDBIcon from "../assets/icons/mongodb.svg";
+import VueJSIcon from "../assets/icons/vuejs.svg";
+import GoLangIcon from "../assets/icons/golang.svg";
+import SQLiteIcon from "../assets/icons/sqlite.svg";
+
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const themes = [
   {
@@ -38,6 +44,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     // livePreview: 'https://example.com/alpha',
     githubLink: "https://github.com/shernille37/Pro-Shop",
+    technologies: [MongoDBIcon, ExpressjsIcon, ReactIcon, NodejsIcon],
   },
   {
     priority: 2,
@@ -47,6 +54,7 @@ export const projects = [
     cover:
       "https://plus.unsplash.com/premium_photo-1663040328859-48bddaa9dfeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     githubLink: "https://github.com/shernille37/Estate-Ease",
+    technologies: [ReactIcon, SpringBootIcon, MongoDBIcon],
   },
   {
     priority: 3,
@@ -57,6 +65,7 @@ export const projects = [
       "https://plus.unsplash.com/premium_photo-1661700152890-931fb04588e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
     githubLink: "https://github.com/shernille37/WASAText",
+    technologies: [VueJSIcon, GoLangIcon, SQLiteIcon],
   },
 ];
 
@@ -98,4 +107,33 @@ export const skillList = [
     name: "Spring Boot",
     icon: SpringBootIcon,
   },
+];
+
+export const userData = {
+  name: "Shernille Licud",
+  emails: ["shernille37@gmail.com", "licud.2034930@studenti.uniroma1.it"],
+
+  phone: "+39 3246223737",
+};
+
+export const footerLinks = [
+  { title: "About", href: "#" },
+  { title: "Projects", href: "#projects" },
+];
+
+export const languages = ["EN", "IT"];
+
+export const socials = [
+  {
+    href: "https://github.com/shernille37",
+    icon: FaGithub,
+  },
+  {
+    href: "https://www.linkedin.com/in/shernille-licud-387659338/",
+    icon: FaLinkedin,
+  },
+  // { href: '', icon: <Codepen /> },
+  // { href: '', icon: <X /> },
+  // { href: '', icon: <Instagram /> },
+  // { href: '', icon: <Facebook /> },
 ];

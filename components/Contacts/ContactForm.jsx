@@ -55,8 +55,6 @@ const ContactForm = () => {
       {/* {!status?.success && (
         <p className="my-2 font-light text-red-600">{status?.message}</p>
       )} */}
-
-      <button>Submit</button>
     </form>
   );
 };

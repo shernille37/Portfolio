@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-primary border-border h-16 overflow-hidden border-b">
+    <nav className="fixed w-full z-10 bg-primary border-border h-16 overflow-hidden border-b">
       <div className="mx-auto flex h-full w-dvw max-w-[1200px] items-center justify-between px-4 py-1">
         {isVisible ? (
           <div className="animate-fade-in transition-all duration-300 text-primary-content md:hidden">
@@ -67,9 +67,7 @@ const Navbar = () => {
             >
               <Link
                 href={href}
-                className={`text-primary-content hover:text-neutral w-full py-7 transition-all duration-150 md:py-0 ${
-                  pathname === href ? "text-neutral cursor-text" : ""
-                }`}
+                className={`text-primary-content hover:text-neutral w-full py-7 transition-all duration-150 md:py-0`}
               >
                 {label}
               </Link>

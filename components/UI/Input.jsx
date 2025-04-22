@@ -17,6 +17,7 @@ const Input = ({ label, id, name, type, placeholder, required }) => {
           required={required}
           className={inputClass}
           rows="7"
+          autoComplete="off"
         ></textarea>
       ) : (
         <input
@@ -26,6 +27,7 @@ const Input = ({ label, id, name, type, placeholder, required }) => {
           placeholder={placeholder}
           required={required}
           className={inputClass}
+          autoComplete="off"
         />
       )}
     </div>
