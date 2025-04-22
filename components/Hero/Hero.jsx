@@ -13,7 +13,7 @@ const Hero = () => {
   const role = "Full Stack Developer";
 
   return (
-    <section className="bg-primary bg-small-glow bg-small-glow-position md:bg-large-glow-position lg:bg-large-glow min-h-[calc(dvh-4rem)] bg-no-repeat">
+    <section className="bg-primary min-h-[calc(dvh-4rem)] bg-no-repeat">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pt-12 pb-10 md:grid-cols-2 lg:p-4">
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
           <h1>
@@ -32,10 +32,10 @@ const Hero = () => {
           <div className="mt-6 flex flex-wrap gap-6">
             <a
               href="#"
-              aria-label="Connect with me"
+              aria-label="Curriculum Vitae"
               className="bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E]"
             >
-              Hire Me
+              Download CV
             </a>
             <a
               href="#"
