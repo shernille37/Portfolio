@@ -15,7 +15,7 @@ const firaCode = Fira_Code({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="dark">
       <body className={`${firaCode.className}`}>
         <header>
           <Navbar />

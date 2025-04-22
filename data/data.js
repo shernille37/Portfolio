@@ -27,6 +27,39 @@ export const themes = [
   },
 ];
 
+// Projects
+
+export const projects = [
+  {
+    priority: 1,
+    title: "ProShop",
+    shortDescription: "Proshop is an E-Commerce Platform built with MERN Stack",
+    cover:
+      "https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    // livePreview: 'https://example.com/alpha',
+    githubLink: "https://github.com/shernille37/Pro-Shop",
+  },
+  {
+    priority: 2,
+    title: "Estate Ease",
+    shortDescription:
+      "Estate Ease is a Real Estate Platform built with React and Spring Boot with MongoDB",
+    cover:
+      "https://plus.unsplash.com/premium_photo-1663040328859-48bddaa9dfeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    githubLink: "https://github.com/shernille37/Estate-Ease",
+  },
+  {
+    priority: 3,
+    title: "WASAText",
+    shortDescription:
+      "WASAText is a Chat Application built with VueJS and GoLang with SQLite. It is my final project in my university course WASA (Web And Software Architecture)",
+    cover:
+      "https://plus.unsplash.com/premium_photo-1661700152890-931fb04588e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    githubLink: "https://github.com/shernille37/WASAText",
+  },
+];
+
 // Skill List
 export const skillList = [
   {
