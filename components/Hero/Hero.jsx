@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem]">
           <div className="text-accent relative size-56 sm:size-60 md:size-[20rem] lg:size-[25.75rem]">
             <Image
-              src={"/images/profile_picture.jpeg"}
+              src={"/images/profile_picture.png"}
               priority={true}
               fill={true}
               alt="Shernille Licud - Full Stack Developer"
