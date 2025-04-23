@@ -1,15 +1,8 @@
 "use client";
 
-// import useRoleSwitcher from '@/hooks/useRoleSwitcher'
-// import useRotatingAnimation from '@/hooks/useRotatingAnimation'
 import Image from "next/image";
 
-// import { HeroImage } from '../../utils/images'
-// import Ellipse from './Ellipse'
-
 const Hero = () => {
-  //   const ellipseRef = useRotatingAnimation()
-  //   const role = useRoleSwitcher({ roles: ['FULLSTACK DEVELOPER', 'INDIE HACKER', 'SOLOPRENEUR'] })
   const role = "Full Stack Developer";
 
   return (
@@ -48,12 +41,8 @@ const Hero = () => {
               priority={true}
               fill={true}
               alt="Shernille Licud - Full Stack Developer"
-              className="object-contain p-7"
+              className="object-cover object-top rounded-2xl md:rounded-full md:p-7"
             />
-            {/* <Ellipse
-              ref={ellipseRef}
-              className="absolute top-0 left-0 size-56 transition-transform duration-500 ease-out sm:size-60 md:size-[20rem] lg:size-[25.75rem]"
-            /> */}
           </div>
         </div>
       </div>
