@@ -39,9 +39,10 @@ const Hero = () => {
             <Image
               src={"/images/profile_picture.png"}
               priority={true}
-              fill={true}
+              width={900}
+              height={900}
               alt="Shernille Licud - Full Stack Developer"
-              className="object-cover object-top rounded-2xl md:rounded-full md:p-7"
+              className="object-cover md:p-7"
             />
           </div>
         </div>
