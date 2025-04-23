@@ -29,7 +29,13 @@ const ProjectCard = ({ data }) => {
             </h3>
             <div className="flex gap-3">
               {technologies.map((tech, index) => (
-                <Image src={tech} width={20} height={20} />
+                <Image
+                  alt={title}
+                  key={index}
+                  src={tech}
+                  width={20}
+                  height={20}
+                />
               ))}
             </div>
           </div>

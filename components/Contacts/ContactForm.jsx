@@ -2,22 +2,23 @@
 
 // import action from "@/actions/contact-form";
 import { useActionState } from "react";
+import submitForm from "@/app/actions/submit-form";
 import Input from "../UI/Input";
 import Button from "../UI/Button";
 
 const ContactForm = () => {
-  // const [status, formAction, isPending] = useActionState(action, null);
+  const [status, formAction, isPending] = useActionState(submitForm, null);
 
-  // if (status?.success) {
-  //   return (
-  //     <p className="text-accent self-center text-center text-2xl font-medium">
-  //       {status.message}
-  //     </p>
-  //   );
-  // }
+  if (status?.success) {
+    return (
+      <p className="text-accent self-center text-center text-2xl font-medium">
+        {status.message}
+      </p>
+    );
+  }
 
   return (
-    <form>
+    <form action={formAction}>
       <Input
         label={"Full Name"}
         id={"name"}
@@ -50,11 +51,11 @@ const ContactForm = () => {
         type={"textarea"}
         required
       />
-      <Button text={"Submit"} />
+      <Button text={"Submit"} disabled={isPending} />
 
-      {/* {!status?.success && (
+      {!status?.success && (
         <p className="my-2 font-light text-red-600">{status?.message}</p>
-      )} */}
+      )}
     </form>
   );
 };
