@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaEye, FaGithub } from "react-icons/fa";
+import LightBox from "./LightBox";
 
 const IconText = ({ icon, text }) => (
   <li className="flex gap-2">
@@ -41,13 +42,7 @@ const ProjectCard = ({ data }) => {
           </div>
         </div>
         <figure className="flex justify-end overflow-hidden">
-          <Image
-            src={cover}
-            width={150}
-            height={80}
-            alt="Project Cover"
-            className="h-[80px] w-[150px] rounded-md object-cover shadow-[0px_1.66px_3.74px_-1.25px_#18274B1F]"
-          />
+          <LightBox src={cover} alt={title} />
         </figure>
       </div>
 

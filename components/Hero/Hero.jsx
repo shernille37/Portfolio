@@ -26,7 +26,7 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-neutral mt-3">
-            Crafting innovative solutions to solve real-world problems
+            Strong passion for Software Development
           </h2>
 
           <div className="mt-6 flex flex-wrap gap-6">
@@ -45,11 +45,10 @@ const Hero = () => {
           <div className="text-accent relative size-56 sm:size-60 md:size-[20rem] lg:size-[25.75rem]">
             <Image
               src={"/images/profile_picture.jpeg"}
-              fill={true}
               priority={true}
-              sizes="(min-width: 1024px) 25.75rem, (min-width: 768px) 20rem, (min-width: 640px) 15rem, 14rem"
+              fill={true}
               alt="Shernille Licud - Full Stack Developer"
-              className="object-contain p-7 "
+              className="object-contain p-7"
             />
             {/* <Ellipse
               ref={ellipseRef}

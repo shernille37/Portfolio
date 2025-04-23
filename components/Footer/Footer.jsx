@@ -1,7 +1,6 @@
 import { footerLinks, languages, socials, userData } from "@/data/data";
 import Social from "../UI/Social";
-
-// import Logo from '../Navbar/Logo'
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -9,7 +8,14 @@ const Footer = () => {
       <div className="relative z-20 grid grid-cols-1 items-start gap-20 md:grid-cols-2 md:gap-12">
         <div>
           <h5 className="mb-8 flex items-center gap-2">
-            {/* <Logo width={30} height={24} /> */}
+            <Image
+              src="/images/SKL.png"
+              width={50}
+              height={50}
+              className="rounded-full"
+              alt="Logo"
+            />
+
             <span className="text-neutral text-lg font-medium">
               Shernille Licud
             </span>

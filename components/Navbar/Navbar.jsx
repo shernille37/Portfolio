@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
+import Image from "next/image";
 
 const navItems = [
   {
@@ -30,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full z-10 bg-primary border-border h-16 overflow-hidden border-b">
+    <nav className="md:fixed w-full z-10 bg-primary border-border h-16 overflow-hidden border-b">
       <div className="mx-auto flex h-full w-dvw max-w-[1200px] items-center justify-between px-4 py-1">
         {isVisible ? (
           <div className="animate-fade-in transition-all duration-300 text-primary-content md:hidden">
@@ -39,7 +40,13 @@ const Navbar = () => {
         ) : (
           <Link href="/">
             <div className="animate-fade-up text-primary-content relative flex items-center gap-3 transition-all duration-300 md:static">
-              <span className="text-primary-content">SKL</span>
+              <Image
+                src="/images/SKL.png"
+                alt="Logo"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
             </div>
           </Link>
         )}
@@ -57,13 +64,13 @@ const Navbar = () => {
         <ul
           className={`${
             isVisible ? "flex" : "hidden"
-          } animate-fade-in bg-primary absolute top-16 left-0 z-10 h-dvh w-dvw md:flex md:flex-row md:justify-end flex-col md:static md:top-0 md:h-full md:w-[72%] lg:w-[70%]`}
+          } animate-fade-in bg-primary absolute top-16 left-0 z-20 h-dvh w-dvw md:flex md:flex-row md:justify-end flex-col md:static md:top-0 md:h-full md:w-[72%] lg:w-[70%]`}
         >
           {navItems.map(({ label, href }) => (
             <li
               key={href}
               onClick={() => setIsVisible(false)}
-              className="border-border flex items-center border-b px-4 text-2xl md:border-y-0 md:border-e md:text-base md:first:border-s  lg:px-8"
+              className="border-border flex items-center border-b px-4 text-2xl md:border-y-0 md:border-e md:text-base md:first:border-s lg:px-8"
             >
               <Link
                 href={href}
