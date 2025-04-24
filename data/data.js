@@ -4,6 +4,7 @@ import NextjsIcon from "../assets/icons/nextjs.svg";
 import NodejsIcon from "../assets/icons/nodejs.svg";
 import ExpressjsIcon from "../assets/icons/express.svg";
 import TailwindCssIcon from "../assets/icons/tailwind-css.svg";
+import BootstrapIcon from "../assets/icons/bootstrap.svg";
 import HTMLIcon from "../assets/icons/html.svg";
 import CSSIcon from "../assets/icons/css.svg";
 import SpringBootIcon from "../assets/icons/spring-boot.svg";
@@ -44,7 +45,13 @@ export const projects = [
     cover: "/projects/proshop.png",
     // livePreview: 'https://example.com/alpha',
     githubLink: "https://github.com/shernille37/Pro-Shop",
-    technologies: [MongoDBIcon, ExpressjsIcon, ReactIcon, NodejsIcon],
+    technologies: [
+      MongoDBIcon,
+      ExpressjsIcon,
+      ReactIcon,
+      NodejsIcon,
+      BootstrapIcon,
+    ],
   },
   {
     priority: 2,
@@ -53,7 +60,7 @@ export const projects = [
       "Estate Ease is a Real Estate Platform built with React and Spring Boot with MongoDB",
     cover: "/projects/estate-ease.png",
     githubLink: "https://github.com/shernille37/Estate-Ease",
-    technologies: [ReactIcon, SpringBootIcon, MongoDBIcon],
+    technologies: [ReactIcon, TailwindCssIcon, SpringBootIcon, MongoDBIcon],
   },
   {
     priority: 3,
@@ -63,7 +70,7 @@ export const projects = [
     cover: "/projects/wasa-text.png",
 
     githubLink: "https://github.com/shernille37/WASAText",
-    technologies: [VueJSIcon, GoLangIcon, SQLiteIcon],
+    technologies: [VueJSIcon, BootstrapIcon, GoLangIcon, SQLiteIcon],
   },
   {
     priority: 4,
