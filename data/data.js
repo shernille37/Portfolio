@@ -11,6 +11,7 @@ import MongoDBIcon from "../assets/icons/mongodb.svg";
 import VueJSIcon from "../assets/icons/vuejs.svg";
 import GoLangIcon from "../assets/icons/golang.svg";
 import SQLiteIcon from "../assets/icons/sqlite.svg";
+import FirebaseIcon from "../assets/icons/firebase.svg";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -63,6 +64,16 @@ export const projects = [
 
     githubLink: "https://github.com/shernille37/WASAText",
     technologies: [VueJSIcon, GoLangIcon, SQLiteIcon],
+  },
+  {
+    priority: 4,
+    title: "Facebook Clone",
+    shortDescription:
+      "Facebook Homepage Clone with real-time updates built with NextJS and Firebase",
+    cover: "/projects/facebook-clone.png",
+
+    githubLink: "https://github.com/shernille37/Facebook-Clone",
+    technologies: [NextjsIcon, FirebaseIcon],
   },
 ];
 
